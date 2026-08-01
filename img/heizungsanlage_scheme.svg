@@ -1,0 +1,295 @@
+<svg width="2000" height="1280" viewBox="0 0 2000 1280" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C0392B"/></marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2471A3"/></marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7f8c8d"/></marker>
+    <marker id="arrowRedSmall" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C0392B"/></marker>
+    <marker id="arrowBlueSmall" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2471A3"/></marker>
+    <linearGradient id="tankGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5B7B1"/>
+      <stop offset="100%" stop-color="#AED6F1"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="2000" height="1280" fill="#FFFFFF"/>
+
+  <!-- ================= REGLER 1 MASTER ================= -->
+  <rect x="330" y="20" width="450" height="115" rx="6" fill="#FFFFFF" stroke="#1B2631" stroke-width="2"/>
+  <text x="555" y="48" text-anchor="middle" font-size="17" font-weight="bold" fill="#1B2631">Regler 1 – Master</text>
+  <text x="555" y="70" text-anchor="middle" font-size="12" fill="#5D6D7E">Danfoss ECL Comfort 210</text>
+  <text x="555" y="93" text-anchor="middle" font-size="12" fill="#1B2631">Steuert: <tspan fill="#6C3483">HK1</tspan>, <tspan fill="#CA6F1E">HK2</tspan></text>
+  <text x="555" y="115" text-anchor="middle" font-size="12" fill="#1B2631">Liest: S1, S2, S3, S4, S5, S6, S8</text>
+
+  <!-- ================= REGLER 2 SLAVE ================= -->
+  <rect x="850" y="20" width="310" height="115" rx="6" fill="#FFFFFF" stroke="#1B2631" stroke-width="2"/>
+  <text x="1005" y="48" text-anchor="middle" font-size="17" font-weight="bold" fill="#1B2631">Regler 2 – Slave</text>
+  <text x="1005" y="70" text-anchor="middle" font-size="12" fill="#5D6D7E">Danfoss ECL Comfort 210</text>
+  <text x="1005" y="93" text-anchor="middle" font-size="12" fill="#1B2631">Steuert: <tspan fill="#2471A3">HK3</tspan></text>
+  <text x="1005" y="115" text-anchor="middle" font-size="12" fill="#1B2631">Liest: S3, S5</text>
+
+  <!-- Master/Slave-Bus Pfeil erst NACH beiden Reglerboxen zeichnen, damit er nicht von Regler2 verdeckt wird -->
+  <line x1="782" y1="77" x2="848" y2="77" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)" marker-start="url(#arrowGray)"/>
+  <text x="815" y="58" text-anchor="middle" font-size="9" fill="#1B2631">Master/</text>
+  <text x="815" y="68" text-anchor="middle" font-size="9" fill="#1B2631">Slave-Bus</text>
+
+  <!-- ================= REGLER WARMWASSERSTATION ================= -->
+  <rect x="1250" y="20" width="400" height="115" rx="6" fill="#FFFFFF" stroke="#1B2631" stroke-width="2"/>
+  <text x="1450" y="48" text-anchor="middle" font-size="17" font-weight="bold" fill="#1B2631">Regler – Warmwasserstation</text>
+  <text x="1450" y="70" text-anchor="middle" font-size="12" fill="#5D6D7E">Oventrop Regtronic PQ</text>
+  <text x="1450" y="93" text-anchor="middle" font-size="12" fill="#1B2631">Steuert: <tspan fill="#1E8449">WW</tspan></text>
+  <text x="1450" y="115" text-anchor="middle" font-size="12" fill="#1B2631">Liest: Fühler der Warmwasserstation</text>
+
+  <!-- ================= SIGNAL-SAMMELSCHIENEN: getrennt fuer Regler 1 (y=270) und Regler 2 (y=245), 25px Abstand ================= -->
+  <line x1="175" y1="270" x2="1098" y2="270" stroke="#95A5A6" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <line x1="930" y1="245" x2="1288" y2="245" stroke="#95A5A6" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <g stroke="#95A5A6" stroke-width="1.3" stroke-dasharray="5 4">
+    <line x1="365" y1="135" x2="365" y2="270"/>
+    <line x1="428" y1="135" x2="428" y2="270"/>
+    <line x1="492" y1="135" x2="492" y2="270"/>
+    <line x1="555" y1="135" x2="555" y2="270"/>
+    <line x1="618" y1="135" x2="618" y2="270"/>
+    <line x1="682" y1="135" x2="682" y2="270"/>
+    <line x1="745" y1="135" x2="745" y2="270"/>
+    <line x1="930" y1="135" x2="930" y2="245"/>
+    <line x1="1040" y1="135" x2="1040" y2="245"/>
+    <line x1="175" y1="270" x2="175" y2="283"/>
+    <line x1="412" y1="270" x2="412" y2="549"/>
+    <line x1="442" y1="270" x2="442" y2="694"/>
+    <line x1="662" y1="270" x2="662" y2="314"/>
+    <line x1="632" y1="270" x2="632" y2="874"/>
+    <line x1="1070" y1="270" x2="1070" y2="655"/>
+    <line x1="1100" y1="270" x2="1100" y2="725"/>
+    <line x1="1260" y1="245" x2="1260" y2="655"/>
+    <line x1="1290" y1="245" x2="1290" y2="725"/>
+  </g>
+  <g font-size="10" fill="#1B2631" text-anchor="middle">
+    <circle cx="365" cy="190" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.3"/><text x="365" y="194">S1</text>
+    <text x="365" y="211" font-size="9.5">Außen-</text><text x="365" y="222" font-size="9.5">fühler</text>
+    <circle cx="428" cy="190" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.3"/><text x="428" y="194">S3</text>
+    <text x="428" y="211" font-size="9.5">Vorlauf</text><text x="428" y="222" font-size="9.5">Nahwärme</text>
+    <circle cx="492" cy="190" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.3"/><text x="492" y="194">S5</text>
+    <text x="492" y="211" font-size="9.5">Rücklauf</text><text x="492" y="222" font-size="9.5">Nahwärme</text>
+    <circle cx="555" cy="190" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.3"/><text x="555" y="194">S8</text>
+    <text x="555" y="211" font-size="9.5">Pufferspeicher</text><text x="555" y="222" font-size="9.5">unten</text>
+    <circle cx="618" cy="190" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.3"/><text x="618" y="194">S6</text>
+    <text x="618" y="211" font-size="9.5">Pufferspeicher</text><text x="618" y="222" font-size="9.5">oben</text>
+    <circle cx="682" cy="190" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.3"/><text x="682" y="194">S4</text>
+    <text x="682" y="211" font-size="9.5">Vorlauf</text><text x="682" y="222" font-size="9.5">Heizung</text>
+    <circle cx="745" cy="190" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.3"/><text x="745" y="194">S2</text>
+    <text x="745" y="211" font-size="9.5">Rücklauf</text><text x="745" y="222" font-size="9.5">Heizung</text>
+    <circle cx="930" cy="190" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.3"/><text x="930" y="194">S3</text>
+    <text x="930" y="211" font-size="9.5">Vorlauf</text><text x="930" y="222" font-size="9.5">Fußbodenh.</text>
+    <circle cx="1040" cy="190" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.3"/><text x="1040" y="194">S5</text>
+    <text x="1040" y="211" font-size="9.5">Rücklauf</text><text x="1040" y="222" font-size="9.5">Fußbodenh.</text>
+  </g>
+
+  <!-- ================= AUSSENFUEHLER S1 AM HAUS ================= -->
+  <g stroke="#1B2631" stroke-width="1.6" fill="#FFFFFF">
+    <rect x="115" y="278" width="45" height="32"/>
+    <polygon points="112,278 137,255 163,278" fill="#EAECEE"/>
+  </g>
+  <line x1="165" y1="294" x2="160" y2="294" stroke="#1B2631" stroke-width="1.4"/>
+  <circle cx="175" cy="294" r="10" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.4"/>
+  <text x="175" y="298" text-anchor="middle" font-size="9.5" fill="#1B2631">S1</text>
+
+  <!-- ================= NAHWAERMENETZ ================= -->
+  <rect x="20" y="542" width="260" height="180" rx="8" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <g stroke="#1E8449" stroke-width="2" fill="#D5F5E3">
+    <rect x="55" y="582" width="40" height="40" />
+    <path d="M103,622 L103,587 Q114,565 125,587 L125,622 Z"/>
+    <rect x="128" y="595" width="26" height="27"/>
+  </g>
+  <text x="150" y="667" text-anchor="middle" font-size="14" font-weight="bold" fill="#1B2631">Nahwärmenetz</text>
+  <text x="150" y="683" text-anchor="middle" font-size="11" fill="#5D6D7E">vom öffentlichen Netz</text>
+  <text x="150" y="699" text-anchor="middle" font-size="11" fill="#1E8449">2 Biogasanlagen</text>
+
+  <!-- HK1 Vorlauf/Ruecklauf werden NACH dem Pufferspeicher gezeichnet (siehe unten), damit sie nicht vom Tank-Fill verdeckt werden -->
+
+
+  <!-- ================= PUFFERSPEICHER ================= -->
+  <rect x="680" y="280" width="280" height="650" rx="40" fill="url(#tankGrad)" stroke="#1B2631" stroke-width="2"/>
+  <text x="820" y="308" text-anchor="middle" font-size="15" font-weight="bold" fill="#1B2631">Pufferspeicher</text>
+  <text x="820" y="906" text-anchor="middle" font-size="12" fill="#1B2631">PSRR 800 Liter</text>
+
+  <line x1="662" y1="325" x2="680" y2="325" stroke="#1B2631" stroke-width="1.4"/>
+  <circle cx="662" cy="325" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="662" y="329" text-anchor="middle" font-size="10" fill="#1B2631">S6</text>
+  <line x1="632" y1="885" x2="680" y2="885" stroke="#1B2631" stroke-width="1.4"/>
+  <circle cx="632" cy="885" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="632" y="889" text-anchor="middle" font-size="10" fill="#1B2631">S8</text>
+
+  <!-- WT1 und WT2: identische Größe (235 hoch), identische Spule (9 gleichmäßige Windungen, 25px Abstand) -->
+  <rect x="720" y="350" width="200" height="235" rx="6" fill="#FFFFFF" fill-opacity="0.55" stroke="#1B2631" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="820" y="368" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B2631">WT1 (oben)</text>
+  <path d="M890,580 L745,580 Q734,567.5 745,555 L890,555 Q901,542.5 890,530 L745,530 Q734,517.5 745,505 L890,505 Q901,492.5 890,480 L745,480 Q734,467.5 745,455 L890,455 Q901,442.5 890,430 L745,430 Q734,417.5 745,405 L890,405 Q901,392.5 890,380 L745,380" fill="none" stroke="#1B2631" stroke-width="2" stroke-linecap="round"/>
+
+  <rect x="720" y="625" width="200" height="235" rx="6" fill="#FFFFFF" fill-opacity="0.55" stroke="#1B2631" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="820" y="643" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B2631">WT2 (unten)</text>
+  <path d="M745,855 L890,855 Q901,842.5 890,830 L745,830 Q734,817.5 745,805 L890,805 Q901,792.5 890,780 L745,780 Q734,767.5 745,755 L890,755 Q901,742.5 890,730 L745,730 Q734,717.5 745,705 L890,705 Q901,692.5 890,680 L745,680 Q734,667.5 745,655 L890,655" fill="none" stroke="#1B2631" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- ================= HK1 BOX (Nahwaerme) - gleiche Ausrichtung wie HK2/HK3/WW, enthaelt M1, S3, S5 ================= -->
+  <rect x="330" y="505" width="170" height="250" rx="8" fill="#F4ECF7" stroke="#6C3483" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="415" y="525" text-anchor="middle" font-size="13" font-weight="bold" fill="#6C3483">Nahwärme (HK1)</text>
+
+  <line x1="280" y1="560" x2="500" y2="560" stroke="#C0392B" stroke-width="3"/>
+  <circle cx="412" cy="560" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="412" y="564" text-anchor="middle" font-size="10" fill="#1B2631">S3</text>
+  <path d="M500,560 L650,560 L650,380 L720,380" fill="none" stroke="#C0392B" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="565" y="552" text-anchor="middle" font-size="12" fill="#C0392B">Vorlauf Nahwärme</text>
+
+  <path d="M720,830 L650,830 L650,705 L500,705" fill="none" stroke="#2471A3" stroke-width="3"/>
+  <polygon points="369,705 385,690 401,705 385,720" fill="#F4F6F6" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="385" y="682" text-anchor="middle" font-size="11" fill="#1B2631">HK1-M1</text>
+  <line x1="401" y1="705" x2="500" y2="705" stroke="#2471A3" stroke-width="3"/>
+  <circle cx="442" cy="705" r="11" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="442" y="709" text-anchor="middle" font-size="10" fill="#1B2631">S5</text>
+  <line x1="369" y1="705" x2="280" y2="705" stroke="#2471A3" stroke-width="3" marker-end="url(#arrowBlue)"/>
+  <text x="565" y="728" text-anchor="middle" font-size="12" fill="#2471A3">Rücklauf Nahwärme</text>
+
+  <!-- Kurzschluss als eckige Klammer mit Abstand zum Rahmen, Enden beruehren WT1/WT2 -->
+  <path d="M920,555 L945,555 L945,655 L920,655" fill="none" stroke="#1B2631" stroke-width="2.2"/>
+
+  <!-- ================= WW SEPARATER VORLAUF ================= -->
+  <path d="M960,380 L1470,380 L1470,505" fill="none" stroke="#C0392B" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="1200" y="371" text-anchor="middle" font-size="11.5" fill="#C0392B">Vorlauf WW</text>
+
+  <!-- ================= GEMEINSAMER VORLAUF HK2+HK3 ================= -->
+  <line x1="960" y1="430" x2="1275" y2="430" stroke="#C0392B" stroke-width="3"/>
+  <text x="1190" y="418" text-anchor="middle" font-size="11.5" fill="#C0392B">Vorlauf HK2 und HK3</text>
+  <line x1="1085" y1="430" x2="1085" y2="505" stroke="#C0392B" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <line x1="1275" y1="430" x2="1275" y2="505" stroke="#C0392B" stroke-width="3" marker-end="url(#arrowRed)"/>
+
+  <!-- ================= GEMEINSAMER RUECKLAUF ================= -->
+  <line x1="1470" y1="830" x2="960" y2="830" stroke="#2471A3" stroke-width="3" marker-end="url(#arrowBlue)"/>
+  <text x="1220" y="852" text-anchor="middle" font-size="11.5" fill="#2471A3">Rücklauf HK2, HK3 und WW</text>
+
+  <!-- ================= HK2 BOX (kein Motor, Beschriftung neben/über der Raute) ================= -->
+  <rect x="1000" y="505" width="170" height="250" rx="8" fill="#FDF2E9" stroke="#CA6F1E" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="1085" y="525" text-anchor="middle" font-size="13" font-weight="bold" fill="#A04000">Heizung (HK2)</text>
+  <line x1="1085" y1="530" x2="1085" y2="563" stroke="#C0392B" stroke-width="3"/>
+  <polygon points="1069,578 1085,563 1101,578 1085,593" fill="#F4F6F6" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="1107" y="582" text-anchor="start" font-size="10.5" fill="#1B2631">HK2-M2</text>
+  <line x1="1085" y1="593" x2="1085" y2="612" stroke="#C0392B" stroke-width="3"/>
+  <circle cx="1085" cy="626" r="14" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <polygon points="1078,619 1078,633 1092,626" fill="#1B2631"/>
+  <text x="1108" y="630" font-size="10.5" fill="#1B2631">HK2-P4</text>
+  <line x1="1085" y1="640" x2="1085" y2="685" stroke="#C0392B" stroke-width="3"/>
+  <circle cx="1070" cy="665" r="10" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="1070" y="669" text-anchor="middle" font-size="10" fill="#1B2631">S4</text>
+  <line x1="1080" y1="665" x2="1085" y2="665" stroke="#C0392B" stroke-width="1.6"/>
+  <line x1="1085" y1="685" x2="1155" y2="685" stroke="#C0392B" stroke-width="2.2" marker-end="url(#arrowRedSmall)"/>
+  <line x1="1155" y1="715" x2="1085" y2="715" stroke="#2471A3" stroke-width="2.2" marker-end="url(#arrowBlueSmall)"/>
+  <text x="1155" y="703" text-anchor="end" font-size="9" fill="#1B2631">zu/von Heizkörpern</text>
+  <line x1="1085" y1="715" x2="1085" y2="755" stroke="#2471A3" stroke-width="3"/>
+  <circle cx="1100" cy="735" r="10" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="1100" y="739" text-anchor="middle" font-size="10" fill="#1B2631">S2</text>
+  <line x1="1090" y1="735" x2="1085" y2="735" stroke="#2471A3" stroke-width="1.6"/>
+  <line x1="1085" y1="755" x2="1085" y2="830" stroke="#2471A3" stroke-width="3"/>
+
+  <rect x="1190" y="505" width="170" height="250" rx="8" fill="#EBF5FB" stroke="#2471A3" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="1275" y="525" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A5276">Fußbodenh. (HK3)</text>
+  <line x1="1275" y1="530" x2="1275" y2="563" stroke="#C0392B" stroke-width="3"/>
+  <polygon points="1259,578 1275,563 1291,578 1275,593" fill="#F4F6F6" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="1297" y="582" text-anchor="start" font-size="10.5" fill="#1B2631">HK3-M1</text>
+  <line x1="1275" y1="593" x2="1275" y2="612" stroke="#C0392B" stroke-width="3"/>
+  <circle cx="1275" cy="626" r="14" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <polygon points="1268,619 1268,633 1282,626" fill="#1B2631"/>
+  <text x="1298" y="630" font-size="10.5" fill="#1B2631">HK3-P1</text>
+  <line x1="1275" y1="640" x2="1275" y2="685" stroke="#C0392B" stroke-width="3"/>
+  <circle cx="1260" cy="665" r="10" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="1260" y="669" text-anchor="middle" font-size="10" fill="#1B2631">S3</text>
+  <line x1="1270" y1="665" x2="1275" y2="665" stroke="#C0392B" stroke-width="1.6"/>
+  <line x1="1275" y1="685" x2="1345" y2="685" stroke="#C0392B" stroke-width="2.2" marker-end="url(#arrowRedSmall)"/>
+  <line x1="1345" y1="715" x2="1275" y2="715" stroke="#2471A3" stroke-width="2.2" marker-end="url(#arrowBlueSmall)"/>
+  <text x="1345" y="703" text-anchor="end" font-size="9" fill="#1B2631">zu/von Fußbodenh.</text>
+  <line x1="1275" y1="715" x2="1275" y2="755" stroke="#2471A3" stroke-width="3"/>
+  <circle cx="1290" cy="735" r="10" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="1290" y="739" text-anchor="middle" font-size="10" fill="#1B2631">S5</text>
+  <line x1="1280" y1="735" x2="1275" y2="735" stroke="#2471A3" stroke-width="1.6"/>
+  <line x1="1275" y1="755" x2="1275" y2="830" stroke="#2471A3" stroke-width="3"/>
+
+  <rect x="1380" y="505" width="180" height="250" rx="8" fill="#EAFAF1" stroke="#1E8449" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="1470" y="525" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E8449">Warmwasserstation (WW)</text>
+  <line x1="1470" y1="530" x2="1470" y2="563" stroke="#C0392B" stroke-width="3"/>
+  <polygon points="1454,578 1470,563 1486,578 1470,593" fill="#F4F6F6" stroke="#1B2631" stroke-width="1.5"/>
+  <text x="1492" y="582" text-anchor="start" font-size="10.5" fill="#1B2631">WW-M1</text>
+  <line x1="1470" y1="593" x2="1470" y2="612" stroke="#C0392B" stroke-width="3"/>
+  <circle cx="1470" cy="626" r="14" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.5"/>
+  <polygon points="1463,619 1463,633 1477,626" fill="#1B2631"/>
+  <text x="1493" y="630" text-anchor="start" font-size="10.5" fill="#1B2631">WW-P1</text>
+  <line x1="1470" y1="640" x2="1470" y2="684" stroke="#C0392B" stroke-width="3"/>
+  <path d="M1450,684 L1450,712 L1490,712 L1490,684 Z" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.4"/>
+  <path d="M1455,689 L1485,689 M1455,697 L1485,697 M1455,705 L1485,705" stroke="#1B2631" stroke-width="1.2"/>
+  <line x1="1405" y1="698" x2="1450" y2="698" stroke="#2471A3" stroke-width="2.3" marker-end="url(#arrowBlueSmall)"/>
+  <text x="1415" y="687" text-anchor="middle" font-size="9" fill="#1B2631">Kaltwasser</text>
+  <line x1="1490" y1="698" x2="1548" y2="698" stroke="#C0392B" stroke-width="2.3" marker-end="url(#arrowRedSmall)"/>
+  <text x="1525" y="687" text-anchor="middle" font-size="9" fill="#1B2631">Warmwasser</text>
+  <line x1="1470" y1="712" x2="1470" y2="755" stroke="#2471A3" stroke-width="3"/>
+  <line x1="1470" y1="755" x2="1470" y2="830" stroke="#2471A3" stroke-width="3"/>
+
+  <!-- ================= LEGENDE ================= -->
+  <rect x="20" y="965" width="1960" height="290" rx="8" fill="#FBFCFC" stroke="#1B2631" stroke-width="1.5"/>
+  <line x1="500" y1="980" x2="500" y2="1243" stroke="#D5D8DC" stroke-width="1.3"/>
+  <line x1="980" y1="980" x2="980" y2="1243" stroke="#D5D8DC" stroke-width="1.3"/>
+  <line x1="1460" y1="980" x2="1460" y2="1243" stroke="#D5D8DC" stroke-width="1.3"/>
+
+  <text x="50" y="995" font-size="13" font-weight="bold" fill="#1B2631">LEGENDE FARBE</text>
+  <text x="520" y="995" font-size="13" font-weight="bold" fill="#1B2631">SYMBOLLEGENDE</text>
+  <text x="1000" y="995" font-size="13" font-weight="bold" fill="#1B2631">FÜHLERÜBERSICHT</text>
+  <text x="1480" y="995" font-size="13" font-weight="bold" fill="#1B2631">ABKÜRZUNGEN</text>
+
+  <line x1="50" y1="1021" x2="100" y2="1021" stroke="#C0392B" stroke-width="3"/>
+  <text x="110" y="1025" font-size="11.5" fill="#1B2631">Vorlauf (warm)</text>
+  <line x1="50" y1="1049" x2="100" y2="1049" stroke="#2471A3" stroke-width="3"/>
+  <text x="110" y="1053" font-size="11.5" fill="#1B2631">Rücklauf (kalt)</text>
+
+  <g font-size="11.5" fill="#1B2631" text-anchor="middle">
+    <circle cx="540" cy="1015" r="12" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.4"/>
+    <polygon points="534,1008 534,1022 548,1015" fill="#1B2631"/>
+    <text x="620" y="1019" text-anchor="start">Umwälzpumpe</text>
+
+    <polygon points="524,1057 540,1041 556,1057 540,1073" fill="#F4F6F6" stroke="#1B2631" stroke-width="1.4"/>
+    <text x="620" y="1061" text-anchor="start">Mischer (3-Wege-Ventil)</text>
+
+    <circle cx="540" cy="1099" r="10" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.3"/><text x="540" y="1103" font-size="8">S</text>
+    <text x="620" y="1103" text-anchor="start">Fühler / Sensor</text>
+
+    <path d="M524,1125 L552,1125 Q556,1129 552,1133 L524,1133 Q520,1137 524,1141 L552,1141" fill="none" stroke="#1B2631" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="620" y="1137" text-anchor="start">Glattrohr-Wärmetauscher</text>
+
+    <path d="M523,1157 L523,1173 L557,1173 L557,1157 Z" fill="#FFFFFF" stroke="#1B2631" stroke-width="1.4"/>
+    <path d="M527,1161 L553,1161 M527,1165 L553,1165 M527,1169 L553,1169" stroke="#1B2631" stroke-width="1"/>
+    <text x="620" y="1169" text-anchor="start">Plattenwärmetauscher (Warmwasserstation)</text>
+  </g>
+  <line x1="525" y1="1197" x2="565" y2="1197" stroke="#95A5A6" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <text x="620" y="1201" font-size="11.5" fill="#1B2631">Steuerleitung / Kommunikation</text>
+  <line x1="525" y1="1221" x2="565" y2="1221" stroke="#1B2631" stroke-width="2"/>
+  <text x="620" y="1225" font-size="11.5" fill="#1B2631">Rohrleitung</text>
+
+  <g font-size="11.5" fill="#1B2631">
+    <text x="1000" y="1023">S1 – Außenfühler</text>
+    <text x="1000" y="1045">S2 – HK2 – Rücklauf</text>
+    <text x="1000" y="1067">S3 – HK1 – Vorlauf</text>
+    <text x="1000" y="1089">S4 – HK2 – Vorlauf</text>
+    <text x="1000" y="1111">S5 – HK1 – Rücklauf</text>
+    <text x="1000" y="1133">S6 – Puffer oben</text>
+    <text x="1000" y="1155">S8 – Puffer unten</text>
+    <text x="1000" y="1177">S3 – HK3 – Vorlauf</text>
+    <text x="1000" y="1199">S5 – HK3 – Rücklauf</text>
+  </g>
+
+  <g font-size="11.5" fill="#1B2631">
+    <text x="1480" y="1023">HK1 – Nahwärme</text>
+    <text x="1480" y="1041">HK2 – Heizung</text>
+    <text x="1480" y="1059">HK3 – Fußbodenheizung</text>
+    <text x="1480" y="1077">WW – Warmwasser</text>
+    <text x="1480" y="1095">HK1-M1 – Mischer Nahwärme</text>
+    <text x="1480" y="1113">HK2-M2 – Mischer Heizung</text>
+    <text x="1480" y="1131">HK3-M1 – Mischer Fußbodenheizung</text>
+    <text x="1480" y="1149">WW-M1 – Mischer Warmwasser</text>
+    <text x="1480" y="1167">HK2-P4 – Pumpe Heizung</text>
+    <text x="1480" y="1185">HK3-P1 – Pumpe Fußbodenheizung</text>
+    <text x="1480" y="1203">WW-P1 – Pumpe Warmwasser</text>
+    <text x="1480" y="1223" font-size="10" fill="#7f8c8d">Hinweis: HK = Heizkreis</text>
+  </g>
+
+</svg>
